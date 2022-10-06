@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="ex8.js"></script>
+    <title>Carros vendidos</title>
+</head>
+
+<body>
+    <nav id="menu-h">
+        <ul>
+            <li> <a href="#" onclick="abrirCadastrar()">Cadastrar Carros </a> </li>
+            <li><a href="#" onclick="abrirConsultar()">Consultar</a></li>
+            <li><a href="#" onclick="abrirRemover()">Remover</a></li>
+        </ul>
+    </nav>
+
+    <div id="cadastrar">
+        <h3>Cadastrar carros</h3> <br><br>
+        Qual mês foi vendido?(mês 1 a 12) <input type="text" id="mesCadastrar"> <br> <br>
+        Qual carro foi vendido? <input type="text" id="carroCadastrar"> <br> <br>
+
+        <input type="button" value="Cadastrar" id="cadastrar" onclick="cadastrar()">
+    </div>
+    <div id="consultar">
+        <h3>Consultar</h3> <br><br>
+        Qual carro você quer consultar?   <input type="text" id="carroConsultar"><br> <br>
+        <input type="button" value="Consultar Carro"  onclick="consultarCarro()"><br> <br>
+        Qual mês você quer consultar? (1 a 12)<input type="text" id="mesConsultar"><br> <br>
+        <input type="button" value="Consultar Mes"  onclick="consultarMes()"><br> <br>
+        <p id="consCarro1"></p>
+        <p id="consCarro2"></p>
+        <p id="consMes"></p>
+    </div>
+    <div id="remover">
+        <h3>Remover</h3> <br><br>
+        Qual carro você quer remover? <br> <br>
+        <input type="text" id="carroRemover">
+        <input type="button" value="Remover" id="remover"><br> <br>
+
+        <input type="button" value="Remover"  onclick="remover()">
+    </div>
+
+</body>
+
+</html>

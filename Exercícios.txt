@@ -1,0 +1,23 @@
+1 - Imprimir números de 0 a 100
+
+2 - Pedir 2 numeors e imprimir entre eles
+
+3 - Repetir 1 e 2 salvando a saida em um vetor
+
+4 - Pedir a quantidade de números e pedir esses números ao usuário.
+Salvar em um vetor
+
+5 - Pedir lista de carros vendidos por mês.
+ Salvar em um vetor de subvetores onde cada subvetor representa um mês. Imprimir vetor
+
+6 - Modificar ex.5 .
+Salvar outro vetor com a quantidade de carros vendidos em cada mês
+ (imprimir vrtor)
+
+7 - Modificar ex6.
+Pedir para o usuário digitar o nome deu um carro cadastrado. Apresentar quantos carros foram vendido desse tipo.
+
+8 Modificar ex7. 	
+Criar menu com opções cadastrar(S), consulta (7) e remoção.
+Para remover pedir nome do carro .
+
