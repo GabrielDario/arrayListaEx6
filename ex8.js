@@ -47,7 +47,7 @@ function cadastrar() {
 }
 
 function remover() {
-    
+
   let contadorRemover = 0;
   let carroRemover = document.getElementById("carroRemover").value;
   carroRemover = carroRemover.toUpperCase();
@@ -56,7 +56,7 @@ function remover() {
   for (mes = 0; mes <= 11; mes++) {
     for (let qntCarro = 0; qntCarro < mesEcarro[mes].length; qntCarro++) {
       if (mesEcarro[mes][qntCarro] == carroRemover) {
-        
+
         contadorRemover = contadorRemover + 1;
         mesEcarro[mes].pop(qntCarro);
         console.log(mesEcarro);
@@ -71,10 +71,15 @@ function consultarCarro() {
   let consCarro1 = document.getElementById("consCarro1");
   let consCarro2 = document.getElementById("consCarro2");
   let carroConsultar = document.getElementById("carroConsultar").value;
+  let consMes = document.getElementById("consMes");
+
   document.getElementById("carroConsultar").value = "";
+  consCarro1.textContent = ` `;
+  consCarro2.textContent = ` `;
+  consMes.textContent = ` `;
+  
   carroConsultar = carroConsultar.toUpperCase();
   let contador = 0;
-  console.log(carroConsultar);
 
   for (mes = 0; mes <12; mes++) {
     for (let qntCarro = 0; qntCarro < mesEcarro[mes].length; qntCarro++) {
@@ -83,7 +88,7 @@ function consultarCarro() {
           console.log("mes " + mes + 1);
           contador = contador + 1;
           consCarro1.textContent = `Foram vendido no mes ${mes+1}`;
-      
+
         } else {
           contador = contador + 1;
           consCarro1.textContent =  consCarro1.textContent + ` ${mes+1}`
@@ -92,6 +97,38 @@ function consultarCarro() {
     }
   }
   consCarro2.textContent = `Existe ${contador} carros do medelo ${carroConsultar} `
+}
+
+function consultarMes() {
+  let mesConsultar = document.getElementById("mesConsultar").value;
+  let consMes = document.getElementById("consMes");
+  let consCarro1 = document.getElementById("consCarro1");
+  let consCarro2 = document.getElementById("consCarro2");
+
+  document.getElementById("carroConsultar").value = "";
+  document.getElementById("mesConsultar").value = "";
+
+  consCarro1.textContent = ` `;
+  consCarro2.textContent = ` `;
+
+  mesConsultar = Number(mesConsultar);
+  let contador = 0;
+
+    for (let qntCarro = 0; qntCarro < mesEcarro[mesConsultar-1].length; qntCarro++) {
+      if (mesEcarro[mesConsultar-1][0] !== null && mesEcarro[mesConsultar-1][0] !== undefined) {
+        console.log(contador);
+        if(contador === 0) {
+          contador = contador + 1;
+          consMes.textContent = `No mês ${mesConsultar} tem os carros: ${mesEcarro[mesConsultar-1][qntCarro]},`;
+          console.log(mesEcarro[mesConsultar-1][qntCarro]);
+
+        } else {
+          contador = contador + 1;
+          consMes.textContent =  consMes.textContent + ` ${mesEcarro[mesConsultar-1][qntCarro]}`
+          console.log(mesEcarro[mesConsultar-1][qntCarro]);
+        }
+      }
+    }
 }
 
 mesEcarro[0].shift();
