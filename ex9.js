@@ -19,7 +19,7 @@ for (let ingressos = 0; ingressos < totalIngressos ; ingressos ++) {
     ingressosVip = ingressosVip + 1;
   }
   tiposIngresso.push(ingresso);
-}aglkdmsflkmlknnlknslknlka s~ksgj~pgjgk niksnlksfflkgnflkj sfn
+}
 ingressosEstudantes = ingressosEstudantes * 10;
 ingressosPopular = ingressosPopular * 20;
 ingressosVip = ingressosVip * 30;
