@@ -119,13 +119,10 @@ function consultarMes() {
         console.log(contador);
         if(contador === 0) {
           contador = contador + 1;
-          consMes.textContent = `No mês ${mesConsultar} tem os carros: ${mesEcarro[mesConsultar-1][qntCarro]},`;
-          console.log(mesEcarro[mesConsultar-1][qntCarro]);
-
+          consMes.textContent = `No mês ${mesConsultar} tem os carros: ${mesEcarro[mesConsultar-1][qntCarro]} `;
         } else {
           contador = contador + 1;
           consMes.textContent =  consMes.textContent + ` ${mesEcarro[mesConsultar-1][qntCarro]}`
-          console.log(mesEcarro[mesConsultar-1][qntCarro]);
         }
       }
     }

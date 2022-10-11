@@ -21,3 +21,15 @@ Pedir para o usuário digitar o nome deu um carro cadastrado. Apresentar quantos
 Criar menu com opções cadastrar(S), consulta (7) e remoção.
 Para remover pedir nome do carro .
 
+9 EXTRA
+ENTRADAS: 
+valor ingresso vip
+valor ingresso popular
+valor ingresso estudante
+nomes []
+tiposEntradas
+nTotalIngresso
+
+Saida: 
+total arrecadado
+total arrecadado por tipos
